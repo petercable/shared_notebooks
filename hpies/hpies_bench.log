@@ -1,0 +1,52 @@
+2015-04-29 15:27:07,184 - INFO    Finding test cases in: test_cases/bench_5_hpies.yml
+2015-04-29 15:27:13,240 - INFO    Configuring driver: {'cmd_port': 13056, 'addr': '127.0.0.1', 'port': 12056} {'parameters': {}}
+2015-04-29 15:27:13,312 - INFO    State updated: DRIVER_STATE_UNKNOWN
+2015-04-29 15:27:13,328 - INFO    State updated: DRIVER_STATE_UNKNOWN
+2015-04-29 15:27:13,353 - INFO    Configured port agent client
+2015-04-29 15:27:13,470 - INFO    Configured init params
+2015-04-29 15:27:13,470 - INFO    Calling discover
+2015-04-29 15:27:18,408 - INFO    State updated: DRIVER_STATE_COMMAND
+2015-04-29 15:27:18,499 - INFO    State updated: DRIVER_STATE_COMMAND
+2015-04-29 15:27:18,501 - INFO    Sending command: 'execute' with args: 'DRIVER_EVENT_START_AUTOSAMPLE'
+2015-04-29 15:27:18,607 - INFO    State updated: DRIVER_STATE_AUTOSAMPLE
+2015-04-29 15:27:20,614 - INFO    Sleep 14400 seconds
+2015-04-29 19:27:20,704 - INFO    Sending command: 'execute' with args: 'DRIVER_EVENT_STOP_AUTOSAMPLE'
+2015-04-29 19:27:53,629 - INFO    Sleep 5 seconds
+2015-04-29 19:28:03,669 - INFO    testing 14998 results (<type 'dict'>)
+2015-04-29 19:28:03,815 - INFO    Took 0.10 secs to retrieve data from: http://localhost:12575/sensor/inv/RS00ENGC/XX00X/00-HPIESA001/streamed/calibration_status?beginDT=2015-04-29T16%3A25%3A07.766Z&endDT=2015-04-29T19%3A27%3A16.698Z
+2015-04-29 19:28:03,845 - INFO    Took 0.03 secs to de-jsonify the data
+2015-04-29 19:28:04,606 - INFO    Took 0.69 secs to retrieve data from: http://localhost:12575/sensor/inv/RS00ENGC/XX00X/00-HPIESA001/streamed/horizontal_electric_field?beginDT=2015-04-29T15%3A29%3A07.639Z&endDT=2015-04-29T17%3A09%3A13.835Z
+2015-04-29 19:28:04,796 - INFO    Took 0.19 secs to de-jsonify the data
+2015-04-29 19:28:05,861 - INFO    Took 0.66 secs to retrieve data from: http://localhost:12575/sensor/inv/RS00ENGC/XX00X/00-HPIESA001/streamed/horizontal_electric_field?beginDT=2015-04-29T17%3A09%3A11.697Z&endDT=2015-04-29T18%3A55%3A11.076Z
+2015-04-29 19:28:06,040 - INFO    Took 0.18 secs to de-jsonify the data
+2015-04-29 19:28:06,685 - INFO    Took 0.20 secs to retrieve data from: http://localhost:12575/sensor/inv/RS00ENGC/XX00X/00-HPIESA001/streamed/horizontal_electric_field?beginDT=2015-04-29T18%3A55%3A08.938Z&endDT=2015-04-29T19%3A23%3A16.475Z
+2015-04-29 19:28:06,740 - INFO    Took 0.05 secs to de-jsonify the data
+2015-04-29 19:28:07,062 - INFO    Took 0.19 secs to retrieve data from: http://localhost:12575/sensor/inv/RS00ENGC/XX00X/00-HPIESA001/streamed/motor_current?beginDT=2015-04-29T15%3A27%3A25.328Z&endDT=2015-04-29T19%3A27%3A23.749Z
+2015-04-29 19:28:07,129 - INFO    Took 0.07 secs to de-jsonify the data
+2015-04-29 19:28:07,309 - INFO    Took 0.05 secs to retrieve data from: http://localhost:12575/sensor/inv/RS00ENGC/XX00X/00-HPIESA001/streamed/hpies_data_header?beginDT=2015-04-29T15%3A27%3A25.257Z&endDT=2015-04-29T19%3A27%3A23.277Z
+2015-04-29 19:28:07,320 - INFO    Took 0.01 secs to de-jsonify the data
+2015-04-29 19:28:07,411 - INFO    Took 0.07 secs to retrieve data from: http://localhost:12575/sensor/inv/RS00ENGC/XX00X/00-HPIESA001/streamed/hpies_status?beginDT=2015-04-29T15%3A27%3A25.928Z&endDT=2015-04-29T19%3A27%3A23.924Z
+2015-04-29 19:28:07,426 - INFO    Took 0.01 secs to de-jsonify the data
+3639313507.77
+3639324436.7
+3639310147.64
+3639316153.84
+3639316151.7
+3639322511.08
+3639322508.94
+3639324196.48
+3639310045.33
+3639324443.75
+3639310045.26
+3639324443.28
+3639310045.93
+3639324443.92
+
+RS00ENGC-XX00X-00-HPIESA001
+
+Stream                           Expected       Retrieved            Pass            Fail
+calibration_status                    788             789             788               0
+horizontal_electric_field           11528           11579           11528               0
+hpies_data_header                     241             242             241               0
+hpies_status                          241             242             241               0
+motor_current                        2200            2166            2200               0
