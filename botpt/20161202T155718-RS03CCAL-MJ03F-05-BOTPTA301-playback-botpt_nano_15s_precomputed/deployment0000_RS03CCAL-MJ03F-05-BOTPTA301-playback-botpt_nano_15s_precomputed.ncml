@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2" title="Joined OOI file">
+    <variable name="obs" shape="obs" type="int">
+        <values start="0" increment="1"/>
+    </variable>
+    <aggregation type="joinExisting" dimName="obs" >
+        <netcdf location="deployment0000_RS03CCAL-MJ03F-05-BOTPTA301-playback-botpt_nano_15s_precomputed_20140829T205945-20150519T221830.nc" ncoords="1450071"/>
+    </aggregation>
+    <attribute name="NC_GLOBAL" type="Structure">
+        <attribute name="geospatial_lon_min" type="float" value="-180.0" />
+        <attribute name="geospatial_lat_max" type="float" value="90.0" />
+        <attribute name="time_coverage_end" type="string" value="2015-05-19T22:18:30" />
+        <attribute name="geospatial_lat_min" type="float" value="90.0" />
+        <attribute name="time_coverage_start" type="string" value="2014-08-29T20:59:45" />
+        <attribute name="geospatial_lon_max" type="float" value="-180.0" />
+    </attribute>
+    <remove name="combined_file_start_time" type="variable" />
+    <variable name="combined_file_start_time" type="float" shape="1">
+        <values>
+ 3641062710.0         </values>
+    </variable>
+</netcdf>
